@@ -1,3 +1,10 @@
+// In this we can call the created provider in the consumer stateless widget with the help of the consumer widget as shown below.
+//first we will create an provider 
+//we will make the consumer stateless widget
+//The place where we want to use the provider, there we will call consumer widget
+//in the consumer widget we will declare variable to store the provider 
+//then we can use them as shown below
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
