@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:learning_riverpod/reading_provider_through_consumer_statefulwidget.dart';
+import 'package:learning_riverpod/state_provider.dart';
 
 //creating a provider
+
+final counterProvider = StateProvider<int>((ref) => 0);
 
 final nameProvider = Provider<String>((ref) {
   return 'Hello Aman';
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.blue),
       debugShowCheckedModeBanner: false,
-      home: const ReadingProviderConsumerStatefulWidget(),
+      home: const LearningStateProvider(),
     );
   }
 }

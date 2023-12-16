@@ -24,8 +24,9 @@ class _ReadingProviderConsumerStatefulWidgetState
       body: Center(child: Consumer(
         builder: (context, ref, child) {
           final statement2 = ref.watch(nameProvider2);
-          final statement = ref.watch(nameProvider);
+          // final statement = ref.watch(nameProvider);
           final statement1 = ref.watch(nameProvider1);
+          final statement = ref.read(nameProvider);
           return Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
