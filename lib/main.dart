@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:learning_riverpod/state_provider.dart';
+import 'package:learning_riverpod/statenotifierprovider/counter_logic.dart';
+import 'package:learning_riverpod/statenotifierprovider/state_notifier_provider.dart';
 
 //creating a provider
 
 final counterProvider = StateProvider<int>((ref) => 0);
-
+final statenotifiercounterProvider =
+    StateNotifierProvider<CounterLogic, int>((ref) => CounterLogic(0));
 final nameProvider = Provider<String>((ref) {
   return 'Hello Aman';
 });
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.blue),
       debugShowCheckedModeBanner: false,
-      home: const LearningStateProvider(),
+      home: const LearningStateNotifierProvider(),
     );
   }
 }

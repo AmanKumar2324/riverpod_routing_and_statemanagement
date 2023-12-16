@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:learning_riverpod/main.dart';
 
-import 'reading_provider_through_consumer_statelesswidget.dart';
+import '../consumer_stateless_widget/reading_provider_through_consumer_statelesswidget.dart';
 
 final nameProvider2 = Provider<String>((ref) {
   return 'Hello world';
