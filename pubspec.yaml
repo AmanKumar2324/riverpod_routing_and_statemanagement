@@ -29,9 +29,11 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.4.9
+  japanese_family_name_generator: ^0.0.1
   riverpod: ^2.4.9
 
 dev_dependencies:
