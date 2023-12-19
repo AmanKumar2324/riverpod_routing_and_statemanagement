@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:learning_riverpod/family_modifiers/family_modifiers.dart';
+import 'package:learning_riverpod/filtering_widget_rebuild_with_select_method/sample_homepage_template.dart';
 import 'package:learning_riverpod/statenotifierprovider/counter_logic.dart';
-import 'package:learning_riverpod/stream_provider/stream_provider.dart';
 
 //creating a provider
 
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(primarySwatch: Colors.blue),
       debugShowCheckedModeBanner: false,
-      home: const LearningFamilyModifiers(),
+      home: const SampleHomePageTemplate(),
     );
   }
 }
